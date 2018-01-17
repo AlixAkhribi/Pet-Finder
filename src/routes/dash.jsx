@@ -10,7 +10,6 @@ import pagesRoutes from './pages.jsx';
 var pages = [{ path: "/pages/user-page", name: "User Page", mini: "UP", component: UserPage }].concat(pagesRoutes);
 
 var dashRoutes = [
-    { path: "/dashboard", name: "Dashboard", icon: "pe-7s-graph", component: Dashboard },
     {
         collapse: true, path: "/components", name: "Components", state: "openComponents", icon: "pe-7s-plugin", views: [
             { path: "/components/sweet-alert", name: "Sweet Alert", mini: "SA", component: SweetAlert },
