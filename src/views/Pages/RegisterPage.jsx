@@ -17,7 +17,7 @@ class RegisterPage extends Component {
           <Col md={8} mdOffset={2}>
             <div className="header-text">
               <h2>Light Bootstrap Dashboard PRO</h2>
-              <h4>Register for free and experience the dashboard today</h4>
+              <h4>Register for free</h4>
               <hr />
             </div>
           </Col>
@@ -32,7 +32,7 @@ class RegisterPage extends Component {
                 <Media.Heading>
                                     Free Account
                 </Media.Heading>
-                                Here you can write a feature description for your dashboard, let the users know what is the value that you give them.
+
               </Media.Body>
             </Media>
             <Media>
@@ -45,7 +45,7 @@ class RegisterPage extends Component {
                 <Media.Heading>
                                     Awesome Performances
                 </Media.Heading>
-                                Here you can write a feature description for your dashboard, let the users know what is the value that you give them.
+                                Description of dashboard
               </Media.Body>
             </Media>
             <Media>
@@ -55,10 +55,8 @@ class RegisterPage extends Component {
                 </div>
               </Media.Left>
               <Media.Body>
-                <Media.Heading>
-                                    Global Support
-                </Media.Heading>
-                                Here you can write a feature description for your dashboard, let the users know what is the value that you give them.
+                <Media.Heading />
+
               </Media.Body>
             </Media>
           </Col>
@@ -70,39 +68,39 @@ class RegisterPage extends Component {
                   <div>
                     <FormGroup>
                       <FormControl
-                            type="text"
-                            placeholder="Your First Name"
-                          />
+                        type="text"
+                        placeholder="Your First Name"
+                      />
                     </FormGroup>
                     <FormGroup>
                       <FormControl
-                            type="text"
-                            placeholder="Your Last Name"
-                          />
+                        type="text"
+                        placeholder="Your Last Name"
+                      />
                     </FormGroup>
                     <FormGroup>
                       <FormControl
-                            type="text"
-                            placeholder="Company"
-                          />
+                        type="text"
+                        placeholder="Company"
+                      />
                     </FormGroup>
                     <FormGroup>
                       <FormControl
-                            type="email"
-                            placeholder="Enter Email"
-                          />
+                        type="email"
+                        placeholder="Enter Email"
+                      />
                     </FormGroup>
                     <FormGroup>
                       <FormControl
-                            type="password"
-                            placeholder="Password"
-                          />
+                        type="password"
+                        placeholder="Password"
+                      />
                     </FormGroup>
                     <FormGroup>
                       <FormControl
-                            type="password"
-                            placeholder="Password Confirmation"
-                          />
+                        type="password"
+                        placeholder="Password Confirmation"
+                      />
                     </FormGroup>
                   </div>
                                 }
