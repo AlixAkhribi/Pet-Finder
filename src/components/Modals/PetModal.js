@@ -6,7 +6,7 @@ import { Button } from 'react-bootstrap';
 class PetModal extends React.Component {
   render() {
     return (
-      <Modal
+      <div className="petForm">  <Modal
         {...this.props}
         bsSize="large"
         aria-labelledby="contained-modal-title-lg"
@@ -21,7 +21,8 @@ class PetModal extends React.Component {
         <Modal.Footer onClick={e => e.stopPropagation()}>
           <Button onClick={this.props.onHide}>Close</Button>
         </Modal.Footer>
-      </Modal>
+                                 </Modal>
+      </div>
     );
   }
 }
