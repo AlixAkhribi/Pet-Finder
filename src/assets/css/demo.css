@@ -93,3 +93,10 @@
         transform: scale(0.75);
     }
 }
+
+.data-tables-header {
+  width: 100%;
+}
+.data-tables-button {
+  float: right;
+}
