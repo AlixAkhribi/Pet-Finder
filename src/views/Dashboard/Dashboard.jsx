@@ -300,8 +300,8 @@ class Dashboard extends Component {
           <Row>
             <Col md={6}>
               <Card
-                title="2014 Sales"
-                category="All products including Taxes"
+                title="Pets Adopted in 2018"
+                category="Dogs"
                 content={
                   <ChartistGraph
                     data={dataBar}
@@ -312,13 +312,13 @@ class Dashboard extends Component {
                                 }
                 legend={
                   <div>
-                    <i className="fa fa-circle text-info" /> Tesla Model S
-                                        <i className="fa fa-circle text-danger" /> BMW 5 Series
+                    <i className="fa fa-circle text-info" /> Snoop
+                                        <i className="fa fa-circle text-danger" /> Doggy
                   </div>
                                 }
                 stats={
                   <div>
-                    <i className="fa fa-check" /> Data information certified
+                    <i className="fa fa-check" /> Doooooooooog!
                   </div>
                                 }
               />

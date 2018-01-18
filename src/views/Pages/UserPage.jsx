@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
-    FormGroup, ControlLabel, FormControl,
-    Grid, Row, Col
+  FormGroup, ControlLabel, FormControl,
+  Grid, Row, Col,
 } from 'react-bootstrap';
 
 import Card from 'components/Card/Card.jsx';
@@ -10,153 +10,153 @@ import UserCard from 'components/Card/UserCard.jsx';
 import Button from 'elements/CustomButton/CustomButton.jsx';
 
 // This is just a default for our User's Image. We need to have it be the user's uploaded image in production //
-import avatar from "assets/img/default-avatar.png";
+import avatar from 'assets/img/default-avatar.png';
 
 class UserPage extends Component {
-    render() {
-        return (
-            <div className="main-content">
-                <Grid fluid>
-                    <Row>
-                        <Col md={8}>
-                            <Card
-                                title="Edit Profile"
-                                content={
-                                    <form>
-                                        <FormInputs
-                                            ncols = {["col-md-5" , "col-md-3" , "col-md-4"]}
-                                            proprieties = {[
+  render() {
+    return (
+      <div className="main-content">
+        <Grid fluid>
+          <Row>
+            <Col md={8}>
+              <Card
+                title="Edit Profile"
+                content={
+                  <form>
+                    <FormInputs
+                      ncols={['col-md-5', 'col-md-3', 'col-md-4']}
+                      proprieties={[
                                                 {
-                                                 label : "Company (disabled)",
-                                                 type : "text",
-                                                 bsClass : "form-control",
-                                                 placeholder : "Company",
-                                                 defaultValue : "Shelter Name.",
-                                                 disabled : true
+                                                 label: 'Company (disabled)',
+                                                 type: 'text',
+                                                 bsClass: 'form-control',
+                                                 placeholder: 'Company',
+                                                 defaultValue: 'Shelter Name.',
+                                                 disabled: true,
                                                 },
                                                 {
-                                                 label : "Username",
-                                                 type : "text",
-                                                 bsClass : "form-control",
-                                                 placeholder : "Username",
-                                                 defaultValue : "User Name"
+                                                 label: 'Username',
+                                                 type: 'text',
+                                                 bsClass: 'form-control',
+                                                 placeholder: 'Username',
+                                                 defaultValue: 'User Name',
                                                 },
                                                 {
-                                                 label : "Email address",
-                                                 type : "email",
-                                                 bsClass : "form-control",
-                                                 placeholder : "Email"
-                                                }
+                                                 label: 'Email address',
+                                                 type: 'email',
+                                                 bsClass: 'form-control',
+                                                 placeholder: 'Email',
+                                                },
                                             ]}
-                                        />
-                                        <FormInputs
-                                            ncols = {["col-md-6" , "col-md-6"]}
-                                            proprieties = {[
+                    />
+                    <FormInputs
+                      ncols={['col-md-6', 'col-md-6']}
+                      proprieties={[
                                                 {
-                                                 label : "First name",
-                                                 type : "text",
-                                                 bsClass : "form-control",
-                                                 placeholder : "First name",
-                                                 defaultValue : "First Name"
+                                                 label: 'First name',
+                                                 type: 'text',
+                                                 bsClass: 'form-control',
+                                                 placeholder: 'First name',
+                                                 defaultValue: 'First Name',
                                                 },
                                                 {
-                                                 label : "Last name",
-                                                 type : "text",
-                                                 bsClass : "form-control",
-                                                 placeholder : "Last name",
-                                                 defaultValue : "Last Name"
-                                                }
+                                                 label: 'Last name',
+                                                 type: 'text',
+                                                 bsClass: 'form-control',
+                                                 placeholder: 'Last name',
+                                                 defaultValue: 'Last Name',
+                                                },
                                             ]}
-                                        />
-                                        <FormInputs
-                                            ncols = {["col-md-12"]}
-                                            proprieties = {[
+                    />
+                    <FormInputs
+                      ncols={['col-md-12']}
+                      proprieties={[
                                                 {
-                                                    label : "Adress",
-                                                    type : "text",
-                                                    bsClass : "form-control",
-                                                    placeholder : "Home Adress",
-                                                    defaultValue : "Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
-                                                }
+                                                    label: 'Adress',
+                                                    type: 'text',
+                                                    bsClass: 'form-control',
+                                                    placeholder: 'Home Adress',
+                                                    defaultValue: 'Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09',
+                                                },
                                             ]}
-                                        />
-                                        <FormInputs
-                                            ncols = {["col-md-4","col-md-4","col-md-4"]}
-                                            proprieties = {[
+                    />
+                    <FormInputs
+                      ncols={['col-md-4', 'col-md-4', 'col-md-4']}
+                      proprieties={[
                                                 {
-                                                    label : "City",
-                                                    type : "text",
-                                                    bsClass : "form-control",
-                                                    placeholder : "City",
-                                                    defaultValue : "City"
+                                                    label: 'City',
+                                                    type: 'text',
+                                                    bsClass: 'form-control',
+                                                    placeholder: 'City',
+                                                    defaultValue: 'City',
                                                 },
                                                 {
-                                                    label : "Country",
-                                                    type : "text",
-                                                    bsClass : "form-control",
-                                                    placeholder : "Country",
-                                                    defaultValue : "Country"
+                                                    label: 'Country',
+                                                    type: 'text',
+                                                    bsClass: 'form-control',
+                                                    placeholder: 'Country',
+                                                    defaultValue: 'Country',
                                                 },
                                                 {
-                                                    label : "Postal Code",
-                                                    type : "number",
-                                                    bsClass : "form-control",
-                                                    placeholder : "ZIP Code"
-                                                }
+                                                    label: 'Postal Code',
+                                                    type: 'number',
+                                                    bsClass: 'form-control',
+                                                    placeholder: 'ZIP Code',
+                                                },
                                             ]}
-                                        />
+                    />
 
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <FormGroup controlId="formControlsTextarea">
-                                                    <ControlLabel>About Me</ControlLabel>
-                                                    <FormControl rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."/>
-                                                </FormGroup>
-                                            </div>
-                                        </div>
-                                        <Button
-                                            bsStyle="info"
-                                            pullRight
-                                            fill
-                                            type="submit"
-                                        >
+                    <div className="row">
+                      <div className="col-md-12">
+                            <FormGroup controlId="formControlsTextarea">
+                                <ControlLabel>About Me</ControlLabel>
+                                <FormControl rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo." />
+                              </FormGroup>
+                          </div>
+                    </div>
+                    <Button
+                      bsStyle="info"
+                      pullRight
+                      fill
+                      type="submit"
+                    >
                                             Update Profile
-                                        </Button>
-                                        <div className="clearfix"></div>
-                                    </form>
+                    </Button>
+                    <div className="clearfix" />
+                  </form>
                                 }
-                            />
-                        </Col>
-                        <Col md={4}>
-                            <UserCard
-                                bgImage="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"
-                                avatar={avatar}
-                                name="Tania Andrew"
-                                userName="tania123"
-                                description={
-                                    <span>
+              />
+            </Col>
+            <Col md={4}>
+              <UserCard
+                bgImage="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"
+                avatar={avatar}
+                name="Tania Andrew"
+                userName="tania123"
+                description={
+                  <span>
                                         "Lamborghini Mercy
                                         <br />
                                         Your chick she so thirsty
                                         <br />
                                         I'm in that two seat Lambo"
-                                    </span>
+                  </span>
                                 }
-                                socials={
-                                    <div>
-                                        <Button simple><i className="fa fa-facebook-square"></i></Button>
-                                        <Button simple><i className="fa fa-twitter"></i></Button>
-                                        <Button simple><i className="fa fa-google-plus-square"></i></Button>
-                                    </div>
+                socials={
+                  <div>
+                    <Button simple><i className="fa fa-facebook-square" /></Button>
+                    <Button simple><i className="fa fa-twitter" /></Button>
+                    <Button simple><i className="fa fa-google-plus-square" /></Button>
+                  </div>
                                 }
-                            />
+              />
 
-                        </Col>
-                    </Row>
-                </Grid>
-            </div>
-        );
-    }
+            </Col>
+          </Row>
+        </Grid>
+      </div>
+    );
+  }
 }
 
 export default UserPage;

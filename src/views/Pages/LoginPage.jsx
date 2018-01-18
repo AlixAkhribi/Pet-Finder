@@ -32,26 +32,20 @@ class LoginPage extends Component {
                     <FormGroup>
                       <ControlLabel>
                                                 Email address
-                          </ControlLabel>
+                      </ControlLabel>
                       <FormControl
-                            placeholder="Enter email"
-                            type="email"
-                          />
+                        placeholder="Enter email"
+                        type="email"
+                      />
                     </FormGroup>
                     <FormGroup>
                       <ControlLabel>
                                                 Password
-                          </ControlLabel>
+                      </ControlLabel>
                       <FormControl
-                            placeholder="Password"
-                            type="password"
-                          />
-                    </FormGroup>
-                    <FormGroup>
-                      <Checkbox
-                            number="1"
-                            label="Subscribe to newsletter"
-                          />
+                        placeholder="Password"
+                        type="password"
+                      />
                     </FormGroup>
                   </div>
                                 }
