@@ -31,7 +31,7 @@ class UserPage extends Component {
                                                  type : "text",
                                                  bsClass : "form-control",
                                                  placeholder : "Company",
-                                                 defaultValue : "Creative Code Inc.",
+                                                 defaultValue : "Shelter Name.",
                                                  disabled : true
                                                 },
                                                 {
@@ -39,7 +39,7 @@ class UserPage extends Component {
                                                  type : "text",
                                                  bsClass : "form-control",
                                                  placeholder : "Username",
-                                                 defaultValue : "tania123"
+                                                 defaultValue : "User Name"
                                                 },
                                                 {
                                                  label : "Email address",
@@ -57,14 +57,14 @@ class UserPage extends Component {
                                                  type : "text",
                                                  bsClass : "form-control",
                                                  placeholder : "First name",
-                                                 defaultValue : "Tania"
+                                                 defaultValue : "First Name"
                                                 },
                                                 {
                                                  label : "Last name",
                                                  type : "text",
                                                  bsClass : "form-control",
                                                  placeholder : "Last name",
-                                                 defaultValue : "Andrew"
+                                                 defaultValue : "Last Name"
                                                 }
                                             ]}
                                         />
