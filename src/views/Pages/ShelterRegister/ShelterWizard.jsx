@@ -17,7 +17,7 @@ const steps = [
     { name: 'Third Tab', component: <Step3 />}
 ];
 
-class Wizard extends Component{
+class ShelterWizard extends Component{
     render(){
         return (
             <div className="main-content">
@@ -47,4 +47,4 @@ class Wizard extends Component{
     }
 }
 
-export default Wizard;
+export default ShelterWizard;
