@@ -50,11 +50,11 @@ class Step1 extends React.Component {
                 <Row>
                     <Col md={10} mdOffset={1}>
                         <FormGroup>
-                            <ControlLabel>Shelter name</ControlLabel>
+                            <ControlLabel>Shelter name: <span className="star">*</span></ControlLabel>
                             <FormControl type="text" name="shelter_name" placeholder="ex: Orange County Animal Shelter" 
                             onChange={(event) => {
-                                this.setState({ type_text: event.target.value });
-                                event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
+                                this.setState({ shelter_name: event.target.value });
+                                event.target.value === '' ? this.setState({ shelterName_Error: (<small className="text-danger">Text is required.</small>) }) : this.setState({ shelterName_Error: null });
                             }}/>
                         </FormGroup>
                     </Col>
@@ -78,7 +78,7 @@ class Step1 extends React.Component {
                 <Row>
                     <Col md={7} mdOffset={1}>
                         <FormGroup>
-                            <ControlLabel>Email <span className="text-danger">*</span></ControlLabel>
+                            <ControlLabel>Email: <span className="text-danger">*</span></ControlLabel>
                             <FormControl type="email" name="email" placeholder="ex: hello@creative-tim.com" onChange={(event) => this.setState({ email: event.target.value })} />
                             {this.state.emailError}
                         </FormGroup>

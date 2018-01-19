@@ -35,7 +35,7 @@ const dashRoutes = [
   // ];
 
   {
-    path: '/Shelter-Registration', name: "Shelter-Register", component: ShelterWizard,
+    path: '/Shelter-Registration', name: "Shelter Register", component: ShelterWizard,
   },
   {
     path: '/UserPage', name: 'Dashboard', icon: 'pe-7s-graph', component: UserPage,

@@ -15,20 +15,20 @@ class AddPetForm extends Component {
     this.vForm = this.refs.vForm;
     this.state = {
       // Pet Form // 
-      shelter: '',
-      zipcode: '',
-      image: '',
-      name: '',
-      breed: '',
-      type: '',
-      age: '',
-      description: '',
+      petShelter: '',
+      petZipcode: '',
+      petImage: '',
+      petName: '',
+      petBreed: '',
+      petType: '',
+      petAge: '',
+      petDescription: '',
       zipcodeError: null,
       ageError: null,
       descriptionError: null,
 
       // Type // 
-      type_age: '',
+
       type_ageError: null,
       type_text: '',
       type_textError: null,
@@ -100,9 +100,9 @@ class AddPetForm extends Component {
                     <Col sm={6}>
                       <FormControl
                         type="text"
-                        name="type_text"
+                        name="petShelter"
                         onChange={(event) => {
-                          this.setState({ type_text: event.target.value });
+                          this.setState({ petShelter: event.target.value });
                           event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
                         }}
                       />
@@ -116,9 +116,9 @@ class AddPetForm extends Component {
                     <Col sm={6}>
                       <FormControl
                         type="text"
-                        name="type_text"
+                        name="petType"
                         onChange={(event) => {
-                          this.setState({ type_text: event.target.value });
+                          this.setState({ petType: event.target.value });
                           event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
                         }}
                       />
@@ -132,9 +132,9 @@ class AddPetForm extends Component {
                         <Col sm={6}>
                           <FormControl
                             type="text"
-                            name="type_text"
+                            name="petName"
                             onChange={(event) => {
-                              this.setState({ type_text: event.target.value });
+                              this.setState({ petName: event.target.value });
                               event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
                             }}
                           />
@@ -148,25 +148,9 @@ class AddPetForm extends Component {
                         <Col sm={6}>
                           <FormControl
                             type="text"
-                            name="type_text"
+                            name="petBreed"
                             onChange={(event) => {
-                              this.setState({ type_text: event.target.value });
-                              event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
-                            }}
-                          />
-                          {this.state.type_textError}
-                        </Col>
-                      </FormGroup>
-                      <FormGroup controlId="formHorizontalText">
-                        <Col componentClass={ControlLabel} sm={2} smOffset={2}>
-                          Animal Type
-                </Col>
-                        <Col sm={6}>
-                          <FormControl
-                            type="text"
-                            name="type_text"
-                            onChange={(event) => {
-                              this.setState({ type_text: event.target.value });
+                              this.setState({ petBreed: event.target.value });
                               event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
                             }}
                           />
@@ -180,7 +164,7 @@ class AddPetForm extends Component {
                         <Col sm={6}>
                           <FormControl
                             type="number"
-                            name="type_age"
+                            name="petAge"
                             onChange={event => this.handleAgeCheck(event)} />
                           {this.state.handleAgeCheck}
                         </Col>
@@ -204,7 +188,7 @@ class AddPetForm extends Component {
                         <Col sm={6}>
                           <FormControl
                             type="text"
-                            name="type_text"
+                            name="petDescription"
                             onChange={(event) => {
                               this.setState({ type_text: event.target.value });
                               event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });

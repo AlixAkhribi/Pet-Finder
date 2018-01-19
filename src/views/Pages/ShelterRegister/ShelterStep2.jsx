@@ -61,7 +61,7 @@ class Step2 extends React.Component {
                         <FormGroup>
                             <ControlLabel>City<span className="text-danger">*</span></ControlLabel>
                             <FormControl type="text" name="ShelterCity" placeholder="" onChange={(event) => {
-                                this.setState({ type_text: event.target.value });
+                                this.setState({ ShelterCity: event.target.value });
                                 event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
                             }}
                             />
