@@ -116,9 +116,8 @@ class DataTables extends Component {
           <Row>
             <Col md={12}>
               <h4 className="title">Animal Data</h4>
-              <p className="category">A powerful jQuery plugin handcrafted by our friends from <a href="https://datatables.net/" target="_blank" rel="noopener noreferrer">dataTables.net</a>. It is a highly flexible tool, based upon the foundations of progressive enhancement and will add advanced interaction controls to any HTML table. Please check out the <a href="https://datatables.net/manual/index" target="_blank" rel="noopener noreferrer">full documentation.</a></p>
               <Card
-                title={<div className="data-tables-header">DataTables.net <span className="data-tables-button"><AddPetBtn /></span></div>}
+                title={<div className="data-tables-header">Animals <span className="data-tables-button"><AddPetBtn /></span></div>}
                 content={
                   <div className="fresh-datatables">
                     <table id="datatables" ref="main" className="table table-striped table-no-bordered table-hover" cellSpacing="0" width="100%" style={{ width: '100%' }}>
