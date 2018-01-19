@@ -34,7 +34,7 @@ export default class PetForm extends React.Component {
         
         let formData = this.state;
         console.log(formData);
-        axios.post("/api/pets/addShelter", formData).then(res => {
+        axios.post("/api/pets/addPet", formData).then(res => {
             console.log("res.data here: ", res.data);
         });
         // petsApi.create(formData).then(results => {
