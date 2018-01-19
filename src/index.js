@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {
-    HashRouter,
-    Route,
-    Switch
+  HashRouter,
+  Route,
+  Switch,
 } from 'react-router-dom';
 
 import indexRoutes from './routes/index.jsx';
@@ -15,17 +15,17 @@ import './assets/sass/light-bootstrap-dashboard.css';
 import './assets/css/demo.css';
 import './assets/css/pe-icon-7-stroke.css';
 
-ReactDOM.render((
+ReactDOM.render(
+  (
     <HashRouter>
-        <Switch>
-            {
-                indexRoutes.map((prop,key) => {
-                    return (
-                        <Route path={prop.path} component={prop.component}  key={key}/>
-                    );
-                })
+      <Switch>
+        {
+                indexRoutes.map((prop, key) => (
+                  <Route path={prop.path} component={prop.component} key={key} />
+                    ))
             }
-        </Switch>
+      </Switch>
     </HashRouter>
-), document.getElementById('root'));
+  ), document.getElementById('root'),
+);
 registerServiceWorker();

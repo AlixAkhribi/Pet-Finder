@@ -5,8 +5,9 @@ import ValidationForms from 'views/Forms/ValidationForms.jsx';
 import DataTables from 'views/Tables/DataTables.jsx';
 import Calendar from 'views/Calendar/Calendar.jsx';
 import UserPage from 'views/Pages/UserPage.jsx';
-
 import pagesRoutes from './pages.jsx';
+import LoginPage from '../views/Pages/LoginPage.jsx';
+import Discover from '../views/Pages/Discover.jsx';
 
 const pages = [{
   path: '/pages/user-page', name: 'User Page', mini: 'UP', component: UserPage,
@@ -15,6 +16,9 @@ const pages = [{
 const dashRoutes = [
   {
     path: '/UserPage', name: 'Dashboard', icon: 'pe-7s-graph', component: UserPage,
+  },
+  {
+    path: '/views/Pages/Discover', name: 'Search for Pets', component: Discover,
   },
   {
     collapse: true,
@@ -49,5 +53,6 @@ const dashRoutes = [
   {
     redirect: true, path: '/', pathTo: '/UserPage', name: 'Dashboard',
   },
+
 ];
 export default dashRoutes;
