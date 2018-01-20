@@ -1,25 +1,37 @@
-import React from 'react';
+import React, { Component } from 'react';
 import CardBtn from './CardBtn/CardBtn';
 import axios from 'axios';
+import './Card.css'
+
+class UserSearchCard extends Component {
+  constructor(props) {
+    super(props);
+  }
 
 
-const UserSearchCard = props =>
-  (<div
-    className="searchCard"
+  render() {
+    return (
+      <div>
+        <div
+          className="searchCard"
+          style={{
+      backgroundImage: this.props.image ? `url(${this.props.image})` : "none"
+    }}
   >
-    <img
-      src={props.image}
-    />
-    <CardBtn
-      style={{ opacity: props.image ? 1 : 0 }}
-      onClick={props.handleBtnClick}
-      data-value="pass"
-    />
-    <CardBtn
-      style={{ opacity: props.image ? 1 : 0 }}
-      onClick={props.handleBtnClick}
-      data-value="pick"
-    />
-   </div>);
-
+    {!this.props.image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
+        <CardBtn
+          style={{ opacity: this.props.image ? 1 : 0 }}
+          onClick={this.props.handleBtnClick}
+          data-value="pass"
+        />
+        <CardBtn
+          style={{ opacity: this.props.image ? 1 : 0 }}
+          onClick={this.props.handleBtnClick}
+          data-value="pick"
+        />
+     </div>
+   </div>
+   );
+  }
+}
 export default UserSearchCard;

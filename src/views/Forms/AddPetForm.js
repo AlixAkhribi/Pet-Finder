@@ -11,10 +11,10 @@ import Button from 'elements/CustomButton/CustomButton.jsx';
 
 class AddPetForm extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.vForm = this.refs.vForm;
     this.state = {
-      // Pet Form // 
+      // Pet Form //
       shelter: '',
       zipcode: '',
       image: '',
@@ -27,7 +27,7 @@ class AddPetForm extends Component {
       ageError: null,
       descriptionError: null,
 
-      // Type // 
+      // Type //
       type_age: '',
       type_ageError: null,
       type_text: '',
@@ -53,20 +53,19 @@ class AddPetForm extends Component {
       type_age: event.target.value,
     });
     event.target.value.length < 3 ? this.setState({
-      type_ageError: (<small className="text-danger">Age cannot be more than 3 numbers</small>)
+      type_ageError: (<small className="text-danger">Age cannot be more than 3 numbers</small>),
     }) : this.setState({
-      type_ageError: null
-    }
-  );
+      type_ageError: null,
+    });
   }
   handleDescriptionCheck(event) {
     this.setState({
-      description: event.target.value
+      description: event.target.value,
     });
     event.target.value.length < 20 ? this.setState({
-      descriptionError: (<small className="text-danger">Description must be at least 20 characters</small>)
+      descriptionError: (<small className="text-danger">Description must be at least 20 characters</small>),
     }) : this.setState({
-      descriptionError: null
+      descriptionError: null,
     });
   }
   handleTypeValidation() {
@@ -93,42 +92,42 @@ class AddPetForm extends Component {
                   }
                   content={
                     <div>
-                    <FormGroup controlId="formHorizontalText">
-                    <Col componentClass={ControlLabel} sm={2} smOffset={2}>
+                      <FormGroup controlId="formHorizontalText">
+                        <Col componentClass={ControlLabel} sm={2} smOffset={2}>
                       Shelter
-            </Col>
-                    <Col sm={6}>
-                      <FormControl
-                        type="text"
-                        name="type_text"
-                        onChange={(event) => {
+                        </Col>
+                        <Col sm={6}>
+                          <FormControl
+                            type="text"
+                            name="type_text"
+                            onChange={(event) => {
                           this.setState({ type_text: event.target.value });
                           event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
                         }}
-                      />
-                      {this.state.type_textError}
-                    </Col>
-                  </FormGroup>
-                  <FormGroup controlId="formHorizontalText">
-                    <Col componentClass={ControlLabel} sm={2} smOffset={2}>
+                          />
+                          {this.state.type_textError}
+                        </Col>
+                      </FormGroup>
+                      <FormGroup controlId="formHorizontalText">
+                        <Col componentClass={ControlLabel} sm={2} smOffset={2}>
                       Animal Type
-            </Col>
-                    <Col sm={6}>
-                      <FormControl
-                        type="text"
-                        name="type_text"
-                        onChange={(event) => {
+                        </Col>
+                        <Col sm={6}>
+                          <FormControl
+                            type="text"
+                            name="type_text"
+                            onChange={(event) => {
                           this.setState({ type_text: event.target.value });
                           event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
                         }}
-                      />
-                      {this.state.type_textError}
-                    </Col>
-                  </FormGroup>
+                          />
+                          {this.state.type_textError}
+                        </Col>
+                      </FormGroup>
                       <FormGroup controlId="formHorizontalRequiredText">
                         <Col componentClass={ControlLabel} sm={2} smOffset={2}>
                           Name
-                  </Col>
+                        </Col>
                         <Col sm={6}>
                           <FormControl
                             type="text"
@@ -144,7 +143,7 @@ class AddPetForm extends Component {
                       <FormGroup controlId="formHorizontalText">
                         <Col componentClass={ControlLabel} sm={2} smOffset={2}>
                           Breed
-                </Col>
+                        </Col>
                         <Col sm={6}>
                           <FormControl
                             type="text"
@@ -160,7 +159,7 @@ class AddPetForm extends Component {
                       <FormGroup controlId="formHorizontalText">
                         <Col componentClass={ControlLabel} sm={2} smOffset={2}>
                           Animal Type
-                </Col>
+                        </Col>
                         <Col sm={6}>
                           <FormControl
                             type="text"
@@ -176,31 +175,33 @@ class AddPetForm extends Component {
                       <FormGroup controlId="formHorizontalText">
                         <Col componentClass={ControlLabel} sm={2} smOffset={2}>
                           Age
-                </Col>
+                        </Col>
                         <Col sm={6}>
                           <FormControl
                             type="number"
                             name="type_age"
-                            onChange={event => this.handleAgeCheck(event)} />
+                            onChange={event => this.handleAgeCheck(event)}
+                          />
                           {this.state.handleAgeCheck}
                         </Col>
                       </FormGroup>
                       <FormGroup controlId="formHorizontalText">
                         <Col componentClass={ControlLabel} sm={2} smOffset={2}>
                           Zip Code
-              </Col>
+                        </Col>
                         <Col sm={6}>
                           <FormControl
                             type="number"
                             name="zipcode"
-                            onChange={event => this.handleZipcodeCheck(event)} />
-                            {this.state.handleZipcodeCheck}
-                          </Col>
-                        </FormGroup>
-                        <FormGroup controlId="formHorizontalText">
+                            onChange={event => this.handleZipcodeCheck(event)}
+                          />
+                          {this.state.handleZipcodeCheck}
+                        </Col>
+                      </FormGroup>
+                      <FormGroup controlId="formHorizontalText">
                         <Col componentClass={ControlLabel} sm={2} smOffset={2}>
                           Description
-                </Col>
+                        </Col>
                         <Col sm={6}>
                           <FormControl
                             type="text"
@@ -233,21 +234,6 @@ class AddPetForm extends Component {
 
 
 export default AddPetForm;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // export default class AddPetForm extends React.Component {

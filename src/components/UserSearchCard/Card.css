@@ -1,4 +1,4 @@
-.card {
+.searchCard {
   background-size: cover;
   background-position: center;
   background-clip: content-box;
@@ -11,7 +11,7 @@
   margin-top: 30px;
 }
 
-.card .fa-spinner {
+.searchCard .fa-spinner {
   font-size: 180px;
   position: absolute;
   left: 25%;
