@@ -46,14 +46,14 @@ class Step1 extends React.Component {
     render() {
         return (
             <div className="wizard-step">
-                <h5 className="text-center">Please tell us more about yourself.</h5>
+                <h5 className="text-center">Please tell us about yourself.</h5>
                 <Row>
                     <Col md={10} mdOffset={1}>
                         <FormGroup>
                             <ControlLabel>Shelter name: <span className="star">*</span></ControlLabel>
-                            <FormControl type="text" name="shelter_name" placeholder="ex: Orange County Animal Shelter" 
+                            <FormControl type="text" name="shelterName" placeholder="ex: Orange County Animal Shelter" 
                             onChange={(event) => {
-                                this.setState({ shelter_name: event.target.value });
+                                this.setState({ shelterName: event.target.value });
                                 event.target.value === '' ? this.setState({ shelterName_Error: (<small className="text-danger">Text is required.</small>) }) : this.setState({ shelterName_Error: null });
                             }}/>
                         </FormGroup>
@@ -85,9 +85,9 @@ class Step1 extends React.Component {
                     </Col>
                     <Col md={3}>
                         <FormGroup>
-                            <ControlLabel>Phone Number <span className="star">*</span></ControlLabel>
+                            <ControlLabel>Phone Number: <span className="star">*</span></ControlLabel>
                             <FormControl type="number" name="shelterPhone" onChange={(event) => {
-                                this.setState({shelterPhoner: event.target.value});
+                                this.setState({shelterPhone: event.target.value});
                                 var digitRex = /^\d+$/;
                                 digitRex.test(event.target.value) === false ? this.setState({ type_numberError: (<small className="text-danger">Has to be a number</small>) }):this.setState({ type_numberError: null });
                             }}/>
