@@ -7,17 +7,17 @@ import{
 
 import Card from 'components/Card/Card.jsx';
 
-import ShelterStep1 from './ShelterStep1.jsx';
-import ShelterStep2 from './ShelterStep2.jsx';
-import ShelterStep3 from './ShelterStep3.jsx';
+import UserStep1 from './ShelterStep1.jsx';
+import UserStep2 from './ShelterStep2.jsx';
+import UserStep3 from './ShelterStep3.jsx';
 
 const steps = [
-    { name: 'First Tab', component: <ShelterStep1 />},
-    { name: 'Second Tab', component: <ShelterStep2 />},
-    { name: 'Third Tab', component: <ShelterStep3 />}
+    { name: 'First Tab', component: <UserStep1 />},
+    { name: 'Second Tab', component: <UserStep2 />},
+    { name: 'Third Tab', component: <UserStep3 />}
 ];
 
-class ShelterWizard extends Component{
+class UserWizard extends Component{
     render(){
         return (
             <div className="main-content">
@@ -29,7 +29,7 @@ class ShelterWizard extends Component{
                                 id="wizardCard"
                                 textCenter
                                 title="Registration"
-                                category="Shelter"
+                                category="User"
                                 content={
                                     <StepZilla
                                         steps={steps}
@@ -47,4 +47,4 @@ class ShelterWizard extends Component{
     }
 }
 
-export default ShelterWizard;
+export default UserWizard;

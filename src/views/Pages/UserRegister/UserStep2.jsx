@@ -11,17 +11,17 @@ import {
     selectOptions
 } from 'variables/Variables.jsx';
 
-class ShelterStep2 extends React.Component {
+class UserStep2 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            Street1: "",
-            Street2: "",
-            ShelterCity: "",
-            ShelterState: "",
-            ShelterStateSelect: "",
-            shelterZipCode: "",
-            phoneNumber: "",
+            UserStreet1: "",
+            UserStreet2: "",
+            UserCity: "",
+            UserState: "",
+            UserStateSelect: "",
+            UserZipCode: "",
+            UserGender: "",
             type_textError: null,
             type_numberError: null
         }
@@ -40,7 +40,7 @@ class ShelterStep2 extends React.Component {
                     <Col md={10} mdOffset={1}>
                         <FormGroup>
                             <ControlLabel>Street Name<span className="text-danger">*</span></ControlLabel>
-                            <FormControl type="text" name="Street1" placeholder="" onChange={(event) => {
+                            <FormControl type="text" name="UserStreet1" placeholder="" onChange={(event) => {
                                 this.setState({ type_text: event.target.value });
                                 event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
                             }}
@@ -53,15 +53,15 @@ class ShelterStep2 extends React.Component {
                     <Col md={5} mdOffset={1}>
                         <FormGroup>
                             <ControlLabel>Street Name 2</ControlLabel>
-                            <FormControl type="text" name="Street1" placeholder=""
+                            <FormControl type="text" name="UserStreet2" placeholder=""
                             />
                         </FormGroup>
                     </Col>
                     <Col md={5}>
                         <FormGroup>
                             <ControlLabel>City<span className="text-danger">*</span></ControlLabel>
-                            <FormControl type="text" name="ShelterCity" placeholder="" onChange={(event) => {
-                                this.setState({ ShelterCity: event.target.value });
+                            <FormControl type="text" name="UserCity" placeholder="" onChange={(event) => {
+                                this.setState({ UserCity: event.target.value });
                                 event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
                             }}
                             />
@@ -74,8 +74,8 @@ class ShelterStep2 extends React.Component {
                         <FormGroup>
                         <ControlLabel>State</ControlLabel>
                         <Select
-                            name="ShelterState"
-                            value={this.state.ShelterStateSelect}
+                            name="UserState"
+                            value={this.state.UserStateSelect}
                             options={[
                                 {value: 1,label:"AL"},
                                 {value: 2,label:"AK"},
@@ -128,7 +128,7 @@ class ShelterStep2 extends React.Component {
                                 {value: 49,label:"WI"},
                                 {value: 50,label:"WY"},
                             ]}
-                            onChange={(value) => this.setState({ ShelterStateSelect: value})}
+                            onChange={(value) => this.setState({ UserStateSelect: value})}
                         />
                         </FormGroup>
                     </Col>
@@ -137,9 +137,9 @@ class ShelterStep2 extends React.Component {
                             <ControlLabel>Zip Code <span className="text-danger">*</span></ControlLabel>
                             <FormControl
                                 type="number"
-                                name="shelterZipCode"
+                                name="UserZipCode"
                                 onChange={(event) => {
-                                    this.setState({ shelterZipCode: event.target.value });
+                                    this.setState({ UserZipCode: event.target.value });
                                     const digitRex = /^\d+$/;
                                     digitRex.test(event.target.value) === false ? this.setState({ type_numberError: (<small className="text-danger">type_number has to be a number.</small>) }) : this.setState({ type_numberError: null });
                                 }}
@@ -153,4 +153,4 @@ class ShelterStep2 extends React.Component {
     }
 }
 
-export default ShelterStep2;
+export default UserStep2;

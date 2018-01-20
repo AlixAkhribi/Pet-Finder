@@ -9,6 +9,7 @@ import pagesRoutes from './pages.jsx';
 import LoginPage from '../views/Pages/LoginPage.jsx';
 import Discover from '../views/Pages/Discover.jsx';
 import ShelterWizard from '../views/Pages/ShelterRegister/ShelterWizard'
+import UserWizard from '../views/Pages/UserRegister/UserWizard';
 
 const pages = [{
   path: '/pages/user-page', name: 'User Page', mini: 'UP', component: UserPage,
@@ -35,14 +36,17 @@ const dashRoutes = [
   // ];
 
   {
-    path: '/Shelter-Registration', name: "Shelter Register", component: ShelterWizard,
+    path: '/Shelter-Registration', name: "Shelter Register", icon:'pe-7s-home', component: ShelterWizard,
+  },
+  {
+    path: '/User-Registration', name: "User Register", icon:'pe-7s-user', component: UserWizard,
   },
   {
     path: '/UserPage', name: 'Dashboard', icon: 'pe-7s-graph', component: UserPage,
   },
   {
 
-    path: '/views/Pages/Discover', name: 'Search for Pets', component: Discover,
+    path: '/views/Pages/Discover', name: 'Search for Pets', icon:'pe-7s-like', component: Discover,
   },
   {
 

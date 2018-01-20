@@ -5,17 +5,17 @@ import {
 } from 'react-bootstrap';
 
 
-class ShelterStep1 extends React.Component {
+class UserStep1 extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             email: "",
             emailError: null,
-            shelterPhone: "",
             password: "",
             cfpassword: "",
-            shelterName: '',
-            shelterName_Error: null,
+            firstName: '',
+            lastName: "",
+            Name_Error: null,
             type_numberError: null,
             
         }
@@ -48,13 +48,23 @@ class ShelterStep1 extends React.Component {
             <div className="wizard-step">
                 <h5 className="text-center">Please tell us about yourself.</h5>
                 <Row>
-                    <Col md={10} mdOffset={1}>
+                    <Col md={5} mdOffset={1}>
                         <FormGroup>
-                            <ControlLabel>Shelter name: <span className="star">*</span></ControlLabel>
-                            <FormControl type="text" name="shelterName" placeholder="ex: Orange County Animal Shelter" 
+                            <ControlLabel>First Name: <span className="star">*</span></ControlLabel>
+                            <FormControl type="text" name="firstName" placeholder="" 
                             onChange={(event) => {
-                                this.setState({ shelterName: event.target.value });
-                                event.target.value === '' ? this.setState({ shelterName_Error: (<small className="text-danger">Text is required.</small>) }) : this.setState({ shelterName_Error: null });
+                                this.setState({ firstName: event.target.value });
+                                event.target.value === '' ? this.setState({ Name_Error: (<small className="text-danger">Text is required.</small>) }) : this.setState({ Name_Error: null });
+                            }}/>
+                        </FormGroup>
+                    </Col>
+                    <Col md={5} mdOffset={}>
+                        <FormGroup>
+                            <ControlLabel>Last Name: <span className="star">*</span></ControlLabel>
+                            <FormControl type="text" name="lastName" placeholder="" 
+                            onChange={(event) => {
+                                this.setState({ lastName: event.target.value });
+                                event.target.value === '' ? this.setState({ Name_Error: (<small className="text-danger">Text is required.</small>) }) : this.setState({ Name_Error: null });
                             }}/>
                         </FormGroup>
                     </Col>
@@ -76,22 +86,11 @@ class ShelterStep1 extends React.Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={7} mdOffset={1}>
+                    <Col md={10} mdOffset={1}>
                         <FormGroup>
                             <ControlLabel>Email: <span className="text-danger">*</span></ControlLabel>
                             <FormControl type="email" name="email" placeholder="ex: hello@creative-tim.com" onChange={(event) => this.setState({ email: event.target.value })} />
                             {this.state.emailError}
-                        </FormGroup>
-                    </Col>
-                    <Col md={3}>
-                        <FormGroup>
-                            <ControlLabel>Phone Number: <span className="star">*</span></ControlLabel>
-                            <FormControl type="number" name="shelterPhone" onChange={(event) => {
-                                this.setState({shelterPhone: event.target.value});
-                                var digitRex = /^\d+$/;
-                                digitRex.test(event.target.value) === false ? this.setState({ type_numberError: (<small className="text-danger">Has to be a number</small>) }):this.setState({ type_numberError: null });
-                            }}/>
-                            {this.state.type_numberError}
                         </FormGroup>
                     </Col>
                 </Row>
@@ -100,4 +99,4 @@ class ShelterStep1 extends React.Component {
     }
 }
 
-export default ShelterStep1;
+export default UserStep1;

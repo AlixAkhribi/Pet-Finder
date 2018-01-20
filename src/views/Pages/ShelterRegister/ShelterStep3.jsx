@@ -4,7 +4,7 @@ import SweetAlert from 'react-bootstrap-sweetalert';
 
 import Button from 'elements/CustomButton/CustomButton.jsx';
 
-class Step3 extends Component{
+class ShelterStep3 extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -46,4 +46,4 @@ class Step3 extends Component{
     }
 }
 
-export default Step3;
+export default ShelterStep3;
