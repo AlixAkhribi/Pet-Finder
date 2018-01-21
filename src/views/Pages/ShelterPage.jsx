@@ -24,39 +24,22 @@ class UserPage extends Component {
                 content={
                   <form>
                     <FormInputs
-                      ncols={['col-md-5', 'col-md-3', 'col-md-4']}
+                      ncols={['col-md-6', 'col-md-4']}
                       proprieties={[
                                                 {
-                                                 label: 'Username',
+                                                 label: 'Company (disabled)',
                                                  type: 'text',
                                                  bsClass: 'form-control',
-                                                 placeholder: 'Username',
-                                                 defaultValue: 'User Name',
+                                                 placeholder: 'Company',
+                                                 defaultValue: 'Shelter Name.',
+                                                 disabled: true,
                                                 },
+
                                                 {
                                                  label: 'Email address',
                                                  type: 'email',
                                                  bsClass: 'form-control',
                                                  placeholder: 'Email',
-                                                },
-                                            ]}
-                    />
-                    <FormInputs
-                      ncols={['col-md-6', 'col-md-6']}
-                      proprieties={[
-                                                {
-                                                 label: 'First name',
-                                                 type: 'text',
-                                                 bsClass: 'form-control',
-                                                 placeholder: 'First name',
-                                                 defaultValue: 'First Name',
-                                                },
-                                                {
-                                                 label: 'Last name',
-                                                 type: 'text',
-                                                 bsClass: 'form-control',
-                                                 placeholder: 'Last name',
-                                                 defaultValue: 'Last Name',
                                                 },
                                             ]}
                     />
