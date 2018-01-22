@@ -26,6 +26,9 @@ class ShelterStep2 extends React.Component {
             type_numberError: null
         }
     }
+	isValidated() {
+		return false;
+	}
     handleTypeValidation() {
         this.state.type_text === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
         const digitRex = /^\d+$/;
