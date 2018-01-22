@@ -125,15 +125,15 @@ class ValidationForms extends Component {
                         <span className="star">*</span> Required fields
                       </div>
                       <Button bsStyle="info" fill pullRight onClick={this.handleRegisterSubmit.bind(this)}>
-                                                Register
+                        Register
                       </Button>
                     </div>
-                                    }
+                  }
                   legend={
                     <div>
                       <Checkbox number={1} label="Subscribe to newsletter" />
                     </div>
-                                    }
+                  }
                 />
               </form>
             </Col>
@@ -158,13 +158,13 @@ class ValidationForms extends Component {
                         <span className="star">*</span> Required fields
                       </div>
                     </div>
-                                    }
+                  }
                   ftTextCenter
                   legend={
                     <Button bsStyle="info" fill wd onClick={this.handleLoginSubmit.bind(this)}>
-                                            Login
+                      Login
                     </Button>
-                                    }
+                  }
                 />
               </form>
             </Col>
@@ -173,79 +173,79 @@ class ValidationForms extends Component {
                 <Card
                   title={
                     <legend>Type Validation</legend>
-                                    }
+                  }
                   content={
                     <div>
                       <FormGroup controlId="formHorizontalRequiredText">
                         <Col componentClass={ControlLabel} sm={2} smOffset={2}>
-                                                    Required text
+                          Required text
                         </Col>
                         <Col sm={6}>
                           <FormControl
                             type="text"
                             name="type_text"
                             onChange={(event) => {
-                                                        this.setState({ type_text: event.target.value });
-                                                        event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
-                                                    }}
+                              this.setState({ type_text: event.target.value });
+                              event.target.value === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
+                            }}
                           />
                           {this.state.type_textError}
                         </Col>
                       </FormGroup>
                       <FormGroup controlId="formHorizontalEmail">
                         <Col componentClass={ControlLabel} sm={2} smOffset={2}>
-                                                    Email
+                          Email
                         </Col>
                         <Col sm={6}>
                           <FormControl
                             type="email"
                             name="type_email"
                             onChange={(event) => {
-                                                        this.setState({ type_email: event.target.value });
-                                                        const emailRex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                                                        emailRex.test(event.target.value) === false ? this.setState({ type_emailError: (<small className="text-danger">Email is required and format should be <i>john@doe.com</i>.</small>) }) : this.setState({ type_emailError: null });
-                                                    }}
+                              this.setState({ type_email: event.target.value });
+                              const emailRex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                              emailRex.test(event.target.value) === false ? this.setState({ type_emailError: (<small className="text-danger">Email is required and format should be <i>john@doe.com</i>.</small>) }) : this.setState({ type_emailError: null });
+                            }}
                           />
                           {this.state.type_emailError}
                         </Col>
                       </FormGroup>
                       <FormGroup controlId="formHorizontalNumber">
                         <Col componentClass={ControlLabel} sm={2} smOffset={2}>
-                                                    Number
+                          Number
                         </Col>
                         <Col sm={6}>
                           <FormControl
                             type="number"
                             name="type_number"
                             onChange={(event) => {
-                                                        this.setState({ type_number: event.target.value });
-                                                        const digitRex = /^\d+$/;
-                                                        digitRex.test(event.target.value) === false ? this.setState({ type_numberError: (<small className="text-danger">type_number has to be a number.</small>) }) : this.setState({ type_numberError: null });
-                                                    }}
+                              this.setState({ type_number: event.target.value });
+                              const digitRex = /^\d+$/;
+                              digitRex.test(event.target.value) === false ? this.setState({ type_numberError: (<small className="text-danger">type_number has to be a number.</small>) }) : this.setState({ type_numberError: null });
+                            }}
                           />
                           {this.state.type_numberError}
                         </Col>
                       </FormGroup>
                       <FormGroup controlId="formHorizontalURL">
                         <Col componentClass={ControlLabel} sm={2} smOffset={2}>
-                                                    URL
+                          URL
                         </Col>
                         <Col sm={6}>
                           <FormControl
                             type="text"
                             name="type_url"
                             onChange={(event) => {
-                                                        this.setState({ type_url: event.target.value });
-                                                        const urlRex = /[-a-zA-Z0-9@:%_+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_+.~#?&//=]*)?/gi;
-                                                        urlRex.test(event.target.value) ? this.setState({ type_urlError: null }) : this.setState({ type_urlError: (<small className="text-danger">Must be a valid URL!</small>) });
-                                                    }}
+                              this.setState({ type_url: event.target.value });
+                              const urlRex = /[-a-zA-Z0-9@:%_+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_+.~#?&//=]*)?/gi;
+                              urlRex.test(event.target.value) ? this.setState({ type_urlError: null }) : this.setState({ type_urlError: (<small className="text-danger">Must be a valid URL!</small>) });
+                            }}
                           />
                           {this.state.type_urlError}
                         </Col>
                       </FormGroup>
                       <FormGroup controlId="formHorizontalEqualTo">
                         <Col componentClass={ControlLabel} sm={2} smOffset={2}>
-                                                    Equal to
+                          Equal to
                         </Col>
                         <Col sm={3}>
                           <FormControl
@@ -253,10 +253,10 @@ class ValidationForms extends Component {
                             name="type_source"
                             placeholder="idSource"
                             onChange={(event) => {
-                                                        this.setState({ type_source: event.target.value });
-                                                        event.target.value === '' ? this.setState({ type_sourceError: (<small className="text-danger">IdSource is required</small>) }) : this.setState({ type_sourceError: null });
-                                                        this.state.type_destination === event.target.value ? this.setState({ type_destinationError: null }) : this.setState({ type_destinationError: (<small className="text-danger">IdSource mismatch!</small>) });
-                                                    }}
+                              this.setState({ type_source: event.target.value });
+                              event.target.value === '' ? this.setState({ type_sourceError: (<small className="text-danger">IdSource is required</small>) }) : this.setState({ type_sourceError: null });
+                              this.state.type_destination === event.target.value ? this.setState({ type_destinationError: null }) : this.setState({ type_destinationError: (<small className="text-danger">IdSource mismatch!</small>) });
+                            }}
                           />
                           {this.state.type_sourceError}
                         </Col>
@@ -266,19 +266,19 @@ class ValidationForms extends Component {
                             name="type_destination"
                             placeholder="idDestination"
                             onChange={(event) => {
-                                                        this.setState({ type_destination: event.target.value });
-                                                        this.state.type_source === event.target.value ? this.setState({ type_destinationError: null }) : this.setState({ type_destinationError: (<small className="text-danger">IdSource mismatch!</small>) });
-                                                    }}
+                              this.setState({ type_destination: event.target.value });
+                              this.state.type_source === event.target.value ? this.setState({ type_destinationError: null }) : this.setState({ type_destinationError: (<small className="text-danger">IdSource mismatch!</small>) });
+                            }}
                           />
                           {this.state.type_destinationError}
                         </Col>
                       </FormGroup>
                     </div>
-                                    }
+                  }
                   ftTextCenter
                   legend={
                     <Button fill bsStyle="info" type="submit" onClick={this.handleTypeValidation.bind(this)}>Validate Inputs</Button>
-                                    }
+                  }
                 />
               </Form>
             </Col>
