@@ -5,6 +5,7 @@ import ValidationForms from 'views/Forms/ValidationForms.jsx';
 import DataTables from 'views/Tables/DataTables.jsx';
 import Calendar from 'views/Calendar/Calendar.jsx';
 import UserPage from 'views/Pages/UserPage.jsx';
+import ShelterPage from 'views/Pages/ShelterPage';
 import pagesRoutes from './pages.jsx';
 import Discover from '../views/Pages/Discover.jsx';
 import ShelterWizard from '../views/Pages/ShelterRegister/ShelterWizard'
@@ -41,7 +42,10 @@ const dashRoutes = [
     path: '/User-Registration', name: "User Register", icon:'pe-7s-user', component: UserWizard,
   },
   {
-    path: '/UserPage', name: 'Dashboard', icon: 'pe-7s-graph', component: UserPage,
+    path: '/UserPage', name: 'Dashboard - User', icon: 'pe-7s-graph', component: UserPage,
+  },
+  {
+    path: '/ShelterPage', name: 'Dashboard - Shelter', icon: 'pe-7s-graph', component: ShelterPage,
   },
   {
 
