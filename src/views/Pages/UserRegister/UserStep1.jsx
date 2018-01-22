@@ -58,7 +58,7 @@ class UserStep1 extends React.Component {
                             }}/>
                         </FormGroup>
                     </Col>
-                    <Col md={5} mdOffset={}>
+                    <Col md={5} >
                         <FormGroup>
                             <ControlLabel>Last Name: <span className="star">*</span></ControlLabel>
                             <FormControl type="text" name="lastName" placeholder="" 

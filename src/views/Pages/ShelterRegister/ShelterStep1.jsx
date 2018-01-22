@@ -46,7 +46,7 @@ class ShelterStep1 extends React.Component {
     render() {
         return (
             <div className="wizard-step">
-                <h5 className="text-center">Please tell us about yourself.</h5>
+                <h5 className="text-center">Please tell us about your shelter</h5>
                 <Row>
                     <Col md={10} mdOffset={1}>
                         <FormGroup>

@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 // react component used to create charts
 import SweetAlert from 'react-bootstrap-sweetalert';
 
+import {
+    Row, Col,
+    FormGroup, FormControl, ControlLabel
+} from 'react-bootstrap';
+
+import Select from 'react-select';
+
 import Button from 'elements/CustomButton/CustomButton.jsx';
 
 class UserStep3 extends Component {
