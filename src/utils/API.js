@@ -11,10 +11,4 @@ export default {
         return result;
       });
   },
-  getDogsOfBreed(breed) {
-    return axios.get(`https://dog.ceo/api/breed/${breed}/images`);
-  },
-  getBaseBreedsList() {
-    return axios.get('https://dog.ceo/api/breeds/list');
-  },
 };

@@ -1,22 +1,24 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
-import UserSearchCard from "../../components/UserSearchCard/Card";
+import UserSearchCard from "../../components/UserSearchCard/Card.js";
 
 class Discover extends Component {
   constructor(props) {
     super(props);
-  this.state = {
+
+    this.state = {
     image: "",
     match: false,
     matchCount: 0
+    }
   };
-}
+
   // When the component mounts, load the next dog to be displayed
   componentDidMount() {
     this.loadNextDog();
   }
 
-  handleBtnClick = (event) => {
+  handleBtnClick = event => {
     // Get the data-value of the clicked button
     const btnType = event.target.attributes.getNamedItem("data-value").value;
     // Clone this.state to the newState object
@@ -25,12 +27,7 @@ class Discover extends Component {
 
     if (btnType === "pick") {
       // Set newState.match to either true or false depending on whether or not the dog likes us (1/5 chance)
-      newState.match = 1 === Math.floor(Math.random() * 5) + 1;
-
-      // Set newState.matchCount equal to its current value or its current value + 1 depending on whether the dog likes us
-      newState.matchCount = newState.match
-        ? newState.matchCount + 1
-        : newState.matchCount;
+      // window.location.assign("./Calendar");
     } else {
       // If we thumbs down'ed the dog, we haven't matched with it
       newState.match = false;
@@ -41,26 +38,35 @@ class Discover extends Component {
   };
 
   loadNextDog = () => {
-    API.getRandomDog()
-      .then(res =>
-        this.setState({
-          image: res.data.message
-        })
-      )
-      .catch(err => console.log(err));
+    console.log(this);
+     API.getRandomDog()
+       .then(imgData => {
+         this.setState({
+           image: imgData
+
+         })
+
+        }
+       )
   };
 
   render() {
     return (
       <div>
-        <h1 className="text-center">Make New Friends</h1>
-        <h3 className="text-center">
-          Thumbs up on any pups you'd like to meet!
-        </h3>
-        <UserSearchCard image={this.state.image} handleBtnClick={this.handleBtnClick} />
-        <h1 className="text-center">
-          Made friends with {this.state.matchCount} pups so far!
-        </h1>
+      <UserSearchCard
+        image={this.state.image} handleBtnClick={this.handleBtnClick} />
+      <h1 className="text-center">
+        Hi, I'm *petName*!
+      </h1>
+      <h2 className="text-center">
+        I'm a *petType*, and belong to the *petBreed* breed.
+      </h2>
+      <h2 className="text-center">
+        I'm *petAge* years old.
+      </h2>
+      <h2 className="text-center">
+        I currently belong to the *petShelter*, but I'm looking for a new home!
+      </h2>
       </div>
     );
   }
