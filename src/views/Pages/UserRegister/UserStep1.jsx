@@ -89,7 +89,7 @@ class UserStep1 extends React.Component {
                     <Col md={10} mdOffset={1}>
                         <FormGroup>
                             <ControlLabel>Email: <span className="text-danger">*</span></ControlLabel>
-                            <FormControl type="email" name="email" placeholder="ex: hello@creative-tim.com" onChange={(event) => this.setState({ email: event.target.value })} />
+                            <FormControl type="email" name="email" placeholder="ex: jon@doe.com" onChange={(event) => this.setState({ email: event.target.value })} />
                             {this.state.emailError}
                         </FormGroup>
                     </Col>

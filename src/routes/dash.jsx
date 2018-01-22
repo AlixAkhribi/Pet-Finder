@@ -6,7 +6,6 @@ import DataTables from 'views/Tables/DataTables.jsx';
 import Calendar from 'views/Calendar/Calendar.jsx';
 import UserPage from 'views/Pages/UserPage.jsx';
 import pagesRoutes from './pages.jsx';
-import LoginPage from '../views/Pages/LoginPage.jsx';
 import Discover from '../views/Pages/Discover.jsx';
 import ShelterWizard from '../views/Pages/ShelterRegister/ShelterWizard'
 import UserWizard from '../views/Pages/UserRegister/UserWizard';

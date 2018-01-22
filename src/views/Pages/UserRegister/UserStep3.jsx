@@ -51,6 +51,7 @@ class UserStep3 extends Component {
     render() {
         return (
             <div className="wizard-step">
+                <h5 className="text-center">Please tell us more about yourself</h5>
                 <Row>
                     <Col md={5} mdOffset={1}>
                         <FormGroup>
@@ -65,7 +66,7 @@ class UserStep3 extends Component {
                     </Col>
                 </Row>
                 <Row>
-                    <Col md={5}>
+                    <Col md={5} mdOffset={1}>
                         <FormGroup>
                             <ControlLabel>Gender</ControlLabel>
                             <Select
