@@ -1,8 +1,4 @@
-//
-// //
-// // // For ExtendedForms view Select
-// //
-//
+
 
 var selectOptions = [
     { value: 'id', label: 'Bahasa Indonesia' },
@@ -32,7 +28,7 @@ var selectOptions = [
     { value: 'ja', label: '日本語' },
     { value: 'ko', label: '한국어' }
   ];
-  
+
   //
   // //
   // // // For Calendar view events
@@ -42,7 +38,7 @@ var selectOptions = [
   var y = today.getFullYear();
   var m = today.getMonth();
   var d = today.getDate();
-  
+
   const events = [
     {
       'title': 'All Day Event',
@@ -55,13 +51,13 @@ var selectOptions = [
       'start': new Date(y, m, 7),
       'end': new Date(y, m, 10)
     },
-  
+
     {
       'title': 'DTS STARTS',
       'start': new Date(y, m, 13),
       'end': new Date(y, m, 20)
     },
-  
+
     {
       'title': 'Some Event',
       'start': new Date(y, m, 9),
@@ -80,7 +76,7 @@ var selectOptions = [
       desc: 'Pre-meeting meeting, to prepare for the meeting'
     }
   ];
-  
+
 
   //
   // //
@@ -88,7 +84,7 @@ var selectOptions = [
   // //
   //
   var defaultWidth = window.screen.width > 768 ? window.screen.width*1/3: window.screen.width;
-  
+
   var style = {
       Wrapper: {},
       Containers: {
@@ -108,23 +104,23 @@ var selectOptions = [
               fontFamily: '"Roboto","Helvetica Neue",Arial,sans-serif',
               fontWeight: '400',
               color: '#FFFFFF'
-  
+
           },
-  
+
           tl: {
               top: '0px',
               bottom: 'auto',
               left: '0px',
               right: 'auto'
           },
-  
+
           tr: {
               top: '0px',
               bottom: 'auto',
               left: 'auto',
               right: '0px'
           },
-  
+
           tc: {
               top: '0px',
               bottom: 'auto',
@@ -132,21 +128,21 @@ var selectOptions = [
               left: '50%',
               marginLeft: -(defaultWidth / 2)
           },
-  
+
           bl: {
               top: 'auto',
               bottom: '0px',
               left: '0px',
               right: 'auto'
           },
-  
+
           br: {
               top: 'auto',
               bottom: '0px',
               left: 'auto',
               right: '0px'
           },
-  
+
           bc: {
               top: 'auto',
               bottom: '0px',
@@ -154,9 +150,9 @@ var selectOptions = [
               left: '50%',
               marginLeft: -(defaultWidth / 2)
           }
-  
+
       },
-  
+
       NotificationItem: {
           DefaultStyle: {
               position: 'relative',
@@ -175,16 +171,16 @@ var selectOptions = [
               WebkitTransform: 'translate3d(0, 0, 0)',
               transform: 'translate3d(0, 0, 0)',
               willChange: 'transform, opacity',
-  
+
               isHidden: {
                   opacity: 0
               },
-  
+
               isVisible: {
                   opacity: 1
               }
           },
-  
+
           success: {
               borderTop: 0,
               backgroundColor: '#a1e82c',
@@ -192,7 +188,7 @@ var selectOptions = [
               MozBoxShadow: 0,
               boxShadow: 0
           },
-  
+
           error: {
               borderTop: 0,
               backgroundColor: '#fc727a',
@@ -200,7 +196,7 @@ var selectOptions = [
               MozBoxShadow: 0,
               boxShadow: 0
           },
-  
+
           warning: {
               borderTop: 0,
               backgroundColor: '#ffbc67',
@@ -208,7 +204,7 @@ var selectOptions = [
               MozBoxShadow: 0,
               boxShadow: 0
           },
-  
+
           info: {
               borderTop: 0,
               backgroundColor: '#63d8f1',
@@ -217,7 +213,7 @@ var selectOptions = [
               boxShadow: 0
           }
       },
-  
+
       Title: {
           DefaultStyle: {
               fontSize: '30px',
@@ -231,9 +227,9 @@ var selectOptions = [
               top: '50%',
               marginTop: '-15px'
           }
-  
+
       },
-  
+
       MessageWrapper: {
           DefaultStyle: {
               marginLeft: '55px',
@@ -243,7 +239,7 @@ var selectOptions = [
               maxWidthwidth: '89%'
           }
       },
-  
+
       Dismiss: {
           DefaultStyle: {
               fontFamily: 'inherit',
@@ -267,28 +263,28 @@ var selectOptions = [
               fontWeight: '300',
               marginLeft: '65px'
           },
-  
+
           success: {
               // color: '#f0f5ea',
               // backgroundColor: '#a1e82c'
           },
-  
+
           error: {
               // color: '#f4e9e9',
               // backgroundColor: '#fc727a'
           },
-  
+
           warning: {
               // color: '#f9f6f0',
               // backgroundColor: '#ffbc67'
           },
-  
+
           info: {
               // color: '#e8f0f4',
               // backgroundColor: '#63d8f1'
           }
       },
-  
+
       Action: {
           DefaultStyle: {
               background: '#ffffff',
@@ -298,28 +294,28 @@ var selectOptions = [
               margin: '10px 0 0 0',
               border: 0
           },
-  
+
           success: {
               backgroundColor: '#a1e82c',
               color: '#ffffff'
           },
-  
+
           error: {
               backgroundColor: '#fc727a',
               color: '#ffffff'
           },
-  
+
           warning: {
               backgroundColor: '#ffbc67',
               color: '#ffffff'
           },
-  
+
           info: {
               backgroundColor: '#63d8f1',
               color: '#ffffff'
           }
       },
-  
+
       ActionWrapper: {
           DefaultStyle: {
               margin: 0,
@@ -327,7 +323,7 @@ var selectOptions = [
           }
       }
   }
-  
+
   //
   // //
   // // // For tables
@@ -343,8 +339,8 @@ var selectOptions = [
       [ "Mason Porter" , "$78,615" , "Chile" , "Gloucester" ],
       [ "Mike Chaney", "$38,735" , "Romania" , "Bucharest" ]
   ];
-  
-  
+
+
   //
   // //
   // // // For icons
@@ -554,8 +550,8 @@ var selectOptions = [
       "pe-7s-alarm",
       "pe-7s-airplay"
   ];
-  
-  
+
+
   module.exports = {
       selectOptions, // For selets in ExtendedForms view
       events, // For calendar in Calendar view
@@ -563,4 +559,3 @@ var selectOptions = [
       thArray, tdArray, // For tables (TableList view)
       iconsArray, // For icons (Icons view)
   };
-  
