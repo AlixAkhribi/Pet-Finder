@@ -30,7 +30,7 @@ class UserStep2 extends React.Component {
         this.state.type_text === '' ? this.setState({ type_textError: (<small className="text-danger">Text is required.</small>) }) : this.setState({ type_textError: null });
         const digitRex = /^\d+$/;
 
-        digitRex.test(this.state.type_number) === false ? this.setState({ type_numberError: (<small className="text-danger">type_number has to be a number.</small>) }) : this.setState({ type_numberError: null });
+        digitRex.test(this.state.type_number) === false ? this.setState({ type_numberError: (<small className="text-danger">Number has to be a number.</small>) }) : this.setState({ type_numberError: null });
     }
     render() {
         return (
