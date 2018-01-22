@@ -64,19 +64,14 @@ class Discover extends Component {
       <div>
       <UserSearchCard
         image={this.state.image} handleBtnClick={this.loadNextPet} />
-      <h1 className="text-center">
+        <div className="petInfo">
+      <h2 className="moreInfo">
         Hi, I'm {this.state.name}!
-      </h1>
-      <h2 className="text-center">
-        I'm a {this.state.type}, and belong to the {this.state.breed} breed.
       </h2>
-      <h2 className="text-center">
-        I'm {this.state.age} years old.
-      </h2>
-      <h2 className="text-center">
-        I currently belong to the {this.state.shelter}, but I'm looking for a new home!
-        <div className="description">{this.state.description}</div>
-      </h2>
+      <h4 className="moreInfo">
+        I'm a {this.state.type}, and belong to the {this.state.breed} breed. I'm {this.state.age} years old. I currently belong to the {this.state.shelter}, but I'm looking for a new home! I can be described as, {this.state.description}
+      </h4>
+    </div>
       </div>
     );
   }

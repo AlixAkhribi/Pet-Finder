@@ -7,9 +7,9 @@ import{
 
 import Card from 'components/Card/Card.jsx';
 
-import UserStep1 from './ShelterStep1.jsx';
-import UserStep2 from './ShelterStep2.jsx';
-import UserStep3 from './ShelterStep3.jsx';
+import UserStep1 from './UserStep1.jsx';
+import UserStep2 from './UserStep2.jsx';
+import UserStep3 from './UserStep3.jsx';
 
 const steps = [
     { name: 'First Tab', component: <UserStep1 />},

@@ -17,7 +17,7 @@ class UserStep1 extends React.Component {
             lastName: "",
             Name_Error: null,
             type_numberError: null,
-            
+
         }
     }
     isValidated() {
@@ -51,17 +51,17 @@ class UserStep1 extends React.Component {
                     <Col md={5} mdOffset={1}>
                         <FormGroup>
                             <ControlLabel>First Name: <span className="star">*</span></ControlLabel>
-                            <FormControl type="text" name="firstName" placeholder="" 
+                            <FormControl type="text" name="firstName" placeholder=""
                             onChange={(event) => {
                                 this.setState({ firstName: event.target.value });
                                 event.target.value === '' ? this.setState({ Name_Error: (<small className="text-danger">Text is required.</small>) }) : this.setState({ Name_Error: null });
                             }}/>
                         </FormGroup>
                     </Col>
-                    <Col md={5} mdOffset={}>
+                    <Col md={5} mdOffset={1}>
                         <FormGroup>
                             <ControlLabel>Last Name: <span className="star">*</span></ControlLabel>
-                            <FormControl type="text" name="lastName" placeholder="" 
+                            <FormControl type="text" name="lastName" placeholder=""
                             onChange={(event) => {
                                 this.setState({ lastName: event.target.value });
                                 event.target.value === '' ? this.setState({ Name_Error: (<small className="text-danger">Text is required.</small>) }) : this.setState({ Name_Error: null });

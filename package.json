@@ -2,6 +2,11 @@
     "name": "light-bootstrap-dashboard-pro-react",
     "version": "1.0.0",
     "private": true,
+    "rnpm": {
+      "assets":[
+      "./assets/fonts"
+      ]
+    }
     "proxy": "http://localhost:3001",
     "dependencies": {
         "axios": "^0.17.1",

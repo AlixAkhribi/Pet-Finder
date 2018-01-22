@@ -12,6 +12,11 @@
         position: absolute;
     }
 }
+fonts.add({
+    'Homemade Apple': ["cursive"]
+  , 'Source Sans Pro': true
+  , 'Raleway': 400
+})
 
 .all-icons [class^="pe-"]{
     font-size: 40px;
@@ -99,4 +104,21 @@
 }
 .data-tables-button {
   float: right;
+}
+.petInfo {
+  text-align: center;
+  border: 3px solid white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  height: 400px;
+  width: 60%;
+  top: -20px;
+  padding: 10px;
+  background-color: white;
+}
+.moreInfo{
+  text-align: left;
+  text-indent: 30px;
 }

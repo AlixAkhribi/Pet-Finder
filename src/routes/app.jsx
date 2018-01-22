@@ -5,7 +5,7 @@ import RegisterPage from '../views/Pages/RegisterPage';
 import LockScreenPage from '../views/Pages/LockScreenPage';
 import Discover from '../views/Pages/Discover';
 import ShelterWizard from '../views/Pages/ShelterRegister/ShelterWizard';
-import ShelterWizard from '../views/Pages/UserRegister/UserWizard';
+import UserWizard from '../views/Pages/UserRegister/UserWizard';
 
 const appRoutes = [
   { path: '../views/Pages/login-page', name: 'Pages', component: LoginPage },
