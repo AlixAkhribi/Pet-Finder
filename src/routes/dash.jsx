@@ -17,24 +17,6 @@ const pages = [{
 }].concat(pagesRoutes);
 
 const dashRoutes = [
-  //     {
-  //         collapse: true, path: "/components", name: "Components", state: "openComponents", icon: "pe-7s-plugin", views: [
-  //             { path: "/components/sweet-alert", name: "Sweet Alert", mini: "SA", component: SweetAlert },
-  //         ]
-  //     },
-  //     {
-  //         collapse: true, path: "/forms", name: "Forms", state: "openForms", icon: "pe-7s-note2", views: [
-  //             { path: "/forms/validation-forms", name: "Validation Forms", mini: "VF", component: ValidationForms },
-  //         ]
-  //     },
-  //     {
-  //         collapse: true, path: "/tables", name: "Tables", state: "openTables", icon: "pe-7s-news-paper", views: [
-  //             { path: "/tables/data-tables", name: "Data Tables", mini: "DT", component: DataTables },
-  //         ]
-  //     },
-  //     { path: "/calendar", name: "Calendar", icon: "pe-7s-date", component: Calendar },
-  //     { redirect: true, path: "/", pathTo: "/dashboard", name: "Dashboard" }
-  // ];
 
   {
     path: '/Shelter-Registration', name: "Shelter Register", icon:'pe-7s-home', component: ShelterWizard,
