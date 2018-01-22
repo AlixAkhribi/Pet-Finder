@@ -58,7 +58,7 @@ class Dash extends Component {
       title: (<span data-notify="icon" className="pe-7s-gift" />),
       message: (
         <div>
-                    Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer.
+                    Welcome to <b> Pet-App-Name</b> the number one place to take an adorable animal 
         </div>
       ),
       level,

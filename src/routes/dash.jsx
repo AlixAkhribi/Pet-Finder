@@ -6,6 +6,7 @@ import DataTables from 'views/Tables/DataTables.jsx';
 import Calendar from 'views/Calendar/Calendar.jsx';
 import UserPage from 'views/Pages/UserPage.jsx';
 import ShelterPage from 'views/Pages/ShelterPage';
+import LoginPage from 'views/Pages/Login';
 import pagesRoutes from './pages.jsx';
 import Discover from '../views/Pages/Discover.jsx';
 import ShelterWizard from '../views/Pages/ShelterRegister/ShelterWizard'
@@ -37,6 +38,9 @@ const dashRoutes = [
 
   {
     path: '/Shelter-Registration', name: "Shelter Register", icon:'pe-7s-home', component: ShelterWizard,
+  },
+  {
+    path: '/Login', name: "Login Page", icon:'', component: LoginPage,
   },
   {
     path: '/User-Registration', name: "User Register", icon:'pe-7s-user', component: UserWizard,

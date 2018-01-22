@@ -9,17 +9,17 @@ import Card from 'components/Card/Card.jsx';
 import Button from 'elements/CustomButton/CustomButton.jsx';
 import Checkbox from 'elements/CustomCheckbox/CustomCheckbox.jsx';
 
-class LoginPage extends Component{
-    constructor(props){
+class LoginPage extends Component {
+    constructor(props) {
         super(props);
         this.state = {
             cardHidden: true
         }
     }
-    componentDidMount(){
-        setTimeout(function() { this.setState({cardHidden: false}); }.bind(this), 700);
+    componentDidMount() {
+        setTimeout(function () { this.setState({ cardHidden: false }); }.bind(this), 700);
     }
-    render(){
+    render() {
         return (
             <Grid>
                 <Row>
