@@ -4248,6 +4248,7 @@ h1 .subtitle {
       left: 0px; }
   .sidebar .sidebar-wrapper {
     overflow: auto;
+    background: linear-gradient(to bottom, #1FA2FF, #12D8FA, #A6FFCB);
     position: relative;
     z-index: 4;
     width: 260px;
@@ -4301,6 +4302,7 @@ h1 .subtitle {
     background-position: center center; }
   .sidebar .logo {
     padding: 12px 0px;
+    background: #1FA2FF;
     margin: 0;
     box-shadow: inset -1px 0px 0px 0px #cfcfca;
     position: relative;

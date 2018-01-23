@@ -40,41 +40,12 @@ var selectOptions = [
   var d = today.getDate();
 
   const events = [
-    {
-      'title': 'All Day Event',
-      'allDay': true,
-      'start': new Date(y, m, 0),
-      'end': new Date(y, m, 1)
-    },
-    {
-      'title': 'Long Event',
-      'start': new Date(y, m, 7),
-      'end': new Date(y, m, 10)
-    },
-
-    {
-      'title': 'DTS STARTS',
-      'start': new Date(y, m, 13),
-      'end': new Date(y, m, 20)
-    },
-
-    {
-      'title': 'Some Event',
-      'start': new Date(y, m, 9),
-      'end': new Date(y, m, 9)
-    },
-    {
-      'title': 'Conference',
-      'start': new Date(y, m, 11),
-      'end': new Date(y, m, 13),
-      desc: 'Big conference for important people'
-    },
-    {
-      'title': 'Meeting',
-      'start': new Date(y, m+1, d, 7, 0, 0),
-      'end': new Date(y, m+1, d, 10, 30, 0),
-      desc: 'Pre-meeting meeting, to prepare for the meeting'
-    }
+    // {
+    //   'title': '',
+    //   'allDay': true,
+    //   'start': new Date(y, m, 0),
+    //   'end': new Date(y, m, 0)
+    // },
   ];
 
 

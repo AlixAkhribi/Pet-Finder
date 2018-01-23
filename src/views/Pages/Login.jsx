@@ -21,14 +21,16 @@ class LoginPage extends Component {
     }
     render() {
         return (
-            <Grid>
+            <div className="wizard-step">
+            
+                <h5 className="text-center">Log In</h5>
                 <Row>
                     <Col md={4} sm={6} mdOffset={4} smOffset={3}>
                         <form>
                             <Card
                                 hidden={this.state.cardHidden}
                                 textCenter
-                                title="Login"
+                                title=""
                                 content={
                                     <div>
                                         <FormGroup>
@@ -67,7 +69,7 @@ class LoginPage extends Component {
                         </form>
                     </Col>
                 </Row>
-            </Grid>
+            </div>
         );
     }
 }
