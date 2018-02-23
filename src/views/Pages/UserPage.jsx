@@ -30,7 +30,7 @@ class UserPage extends Component {
                           label: 'Email address',
                           type: 'email',
                           bsClass: 'form-control',
-                          placeholder: 'Email',
+                          placeholder: 'YouCantSeeMe@wwe.com',
                         },
                       ]}
                     />
@@ -41,15 +41,15 @@ class UserPage extends Component {
                           label: 'First name',
                           type: 'text',
                           bsClass: 'form-control',
-                          placeholder: 'First name',
-                          defaultValue: 'First Name',
+                          placeholder: 'John',
+                          defaultValue: 'John',
                         },
                         {
                           label: 'Last name',
                           type: 'text',
                           bsClass: 'form-control',
-                          placeholder: 'Last name',
-                          defaultValue: 'Last Name',
+                          placeholder: 'Cena',
+                          defaultValue: 'Cena',
                         },
                       ]}
                     />
@@ -58,17 +58,17 @@ class UserPage extends Component {
                       proprieties={[
                         {
                           label: 'Password',
-                          type: 'number',
+                          type: 'Password',
                           bsClass: 'form-control',
-                          placeholder: 'First name',
-                          defaultValue: 'First Name',
+                          placeholder: '*********',
+                          defaultValue: 'Password',
                         },
                         {
                           label: 'Confirm Password',
-                          type: 'number',
+                          type: 'Password',
                           bsClass: 'form-control',
-                          placeholder: 'Last name',
-                          defaultValue: 'Last Name',
+                          placeholder: '*********',
+                          defaultValue: 'Password',
                         },
                       ]}
                     />
@@ -76,11 +76,11 @@ class UserPage extends Component {
                       ncols={['col-md-12']}
                       proprieties={[
                         {
-                          label: 'Adress',
+                          label: 'Address',
                           type: 'text',
                           bsClass: 'form-control',
                           placeholder: 'Home Adress',
-                          defaultValue: 'Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09',
+                          defaultValue: 'West Newbury',
                         },
                       ]}
                     />
@@ -91,21 +91,21 @@ class UserPage extends Component {
                           label: 'City',
                           type: 'text',
                           bsClass: 'form-control',
-                          placeholder: 'City',
-                          defaultValue: 'City',
+                          placeholder: 'Massachusetts',
+                          defaultValue: 'Massachusetts',
                         },
                         {
                           label: 'Country',
                           type: 'text',
                           bsClass: 'form-control',
-                          placeholder: 'Country',
-                          defaultValue: 'Country',
+                          placeholder: 'USA',
+                          defaultValue: 'USA',
                         },
                         {
                           label: 'Postal Code',
                           type: 'number',
                           bsClass: 'form-control',
-                          placeholder: 'ZIP Code',
+                          placeholder: '01922',
                         },
                       ]}
                     />
@@ -114,7 +114,7 @@ class UserPage extends Component {
                       <div className="col-md-12">
                         <FormGroup controlId="formControlsTextarea">
                           <ControlLabel>About Me</ControlLabel>
-                          <FormControl rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo." />
+                          <FormControl rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="I got my soul straight, I brush your mouth like Colgate, You can't see me, my time is now" />
                         </FormGroup>
                       </div>
                     </div>
@@ -135,15 +135,15 @@ class UserPage extends Component {
               <UserCard
                 bgImage="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"
                 avatar={avatar}
-                name="Tania Andrew"
-                userName="tania123"
+                name="John Cena"
+                userName="Mr.Invisible"
                 description={
                   <span>
-                    "Lamborghini Mercy
+                    "I got my soul straight,
                                         <br />
-                    Your chick she so thirsty
+                    I brush your mouth like Colgate,
                                         <br />
-                    I'm in that two seat Lambo"
+                    You can't see me, my time is now"
                   </span>
                 }
                 socials={

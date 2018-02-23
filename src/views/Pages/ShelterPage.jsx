@@ -10,7 +10,7 @@ import UserCard from 'components/Card/UserCard.jsx';
 import Button from 'elements/CustomButton/CustomButton.jsx';
 
 // This is just a default for our User's Image. We need to have it be the user's uploaded image in production //
-import avatar from 'assets/img/default-avatar.png';
+import avatar from 'assets/img/animal-shelter-avatar.png';
 
 class UserPage extends Component {
   render() {
@@ -31,7 +31,7 @@ class UserPage extends Component {
                           type: 'text',
                           bsClass: 'form-control',
                           placeholder: 'Company',
-                          defaultValue: 'Shelter Name.',
+                          defaultValue: 'West Newbury Animal Shelter',
                           disabled: true,
                         },
 
@@ -39,7 +39,7 @@ class UserPage extends Component {
                           label: 'Email address',
                           type: 'email',
                           bsClass: 'form-control',
-                          placeholder: 'Email',
+                          placeholder: 'WN.AnimalShelter@gmail.com',
                         },
                       ]}
                     />
@@ -48,17 +48,17 @@ class UserPage extends Component {
                       proprieties={[
                         {
                           label: 'Password',
-                          type: 'number',
+                          type: 'Password',
                           bsClass: 'form-control',
-                          placeholder: 'First name',
-                          defaultValue: 'First Name',
+                          placeholder: 'Password',
+                          defaultValue: '**********',
                         },
                         {
                           label: 'Confirm Password',
-                          type: 'number',
+                          type: 'Password',
                           bsClass: 'form-control',
-                          placeholder: 'Last name',
-                          defaultValue: 'Last Name',
+                          placeholder: 'Password',
+                          defaultValue: '**********',
                         },
                       ]}
                     />
@@ -66,11 +66,11 @@ class UserPage extends Component {
                       ncols={['col-md-12']}
                       proprieties={[
                         {
-                          label: 'Adress',
+                          label: 'Address',
                           type: 'text',
                           bsClass: 'form-control',
-                          placeholder: 'Home Adress',
-                          defaultValue: 'Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09',
+                          placeholder: 'Home Address',
+                          defaultValue: 'West Newbury Shelter 123',
                         },
                       ]}
                     />
@@ -82,20 +82,20 @@ class UserPage extends Component {
                           type: 'text',
                           bsClass: 'form-control',
                           placeholder: 'City',
-                          defaultValue: 'City',
+                          defaultValue: 'Boston',
                         },
                         {
                           label: 'Country',
                           type: 'text',
                           bsClass: 'form-control',
                           placeholder: 'Country',
-                          defaultValue: 'Country',
+                          defaultValue: 'USA',
                         },
                         {
                           label: 'Postal Code',
                           type: 'number',
                           bsClass: 'form-control',
-                          placeholder: 'ZIP Code',
+                          placeholder: '01922',
                         },
                       ]}
                     />
@@ -103,8 +103,8 @@ class UserPage extends Component {
                     <div className="row">
                       <div className="col-md-12">
                         <FormGroup controlId="formControlsTextarea">
-                          <ControlLabel>About Me</ControlLabel>
-                          <FormControl rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo." />
+                          <ControlLabel>About Us</ControlLabel>
+                          <FormControl rows="5" componentClass="textarea" bsClass="form-control" placeholder="Here can be your description" defaultValue="We provide sheltering, care and enrichment to unwantedneglected, and abused animals." />
                         </FormGroup>
                       </div>
                     </div>
@@ -123,17 +123,17 @@ class UserPage extends Component {
             </Col>
             <Col md={4}>
               <UserCard
-                bgImage="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"
+                bgImage="https://i.imgur.com/p3dqM5A.png"
                 avatar={avatar}
-                name="Tania Andrew"
-                userName="tania123"
+                name="West Newbury Animal Shelter"
+                userName="WN.Shelter"
                 description={
                   <span>
-                    "Lamborghini Mercy
+                    "We provide sheltering,
                                         <br />
-                    Your chick she so thirsty
+                    care and enrichment to unwanted,
                                         <br />
-                    I'm in that two seat Lambo"
+                    neglected, and abused animals"
                   </span>
                 }
                 socials={

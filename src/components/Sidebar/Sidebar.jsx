@@ -71,7 +71,7 @@ class Sidebar extends Component {
             </div>
           </a>
           <a href="" className="simple-text logo-normal">
-                        Pet-App-name
+                        Pet Finder
           </a>
         </div>
         <div className="sidebar-wrapper" ref="sidebarWrapper">
@@ -82,7 +82,7 @@ class Sidebar extends Component {
             <div className="info">
               <a onClick={() => this.setState({ openAvatar: !this.state.openAvatar })}>
                 <span>
-                                    User name
+                                    Mr.Invisible
                                     <b className={this.state.openAvatar} />
                 </span>
               </a>
